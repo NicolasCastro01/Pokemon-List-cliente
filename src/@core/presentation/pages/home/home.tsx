@@ -10,9 +10,9 @@ import { PokemonCard, PokemonListTag } from "./components";
 
 export default function Home() {
     const router = useRouter();
-    const findAllPokemonUseCase = useMemo(() => makeRemoteLoadPokemonList(), [makeRemoteLoadPokemonList]);
-    const findPokemonUseCase = useMemo(() => makeRemoteLoadPokemon(), [makeRemoteLoadPokemon]);
-    const sendPokemonUseCase = useMemo(() => makeRemoteSendPokemon(), [makeRemoteSendPokemon]);
+    const findAllPokemonUseCase = useMemo(() => makeRemoteLoadPokemonList(), []);
+    const findPokemonUseCase = useMemo(() => makeRemoteLoadPokemon(), []);
+    const sendPokemonUseCase = useMemo(() => makeRemoteSendPokemon(), []);
     const [search, setSearch] = useState<string>('');
     const [searchPokemons, setSearchPokemons] = useState<PokemonData[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);

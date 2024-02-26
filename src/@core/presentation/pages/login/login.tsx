@@ -15,7 +15,7 @@ export default function Login() {
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const router = useRouter();
-    const sendUserCredentials = useMemo(() => makeRemoteSendUserCredentials(), [makeRemoteSendUserCredentials]);
+    const sendUserCredentials = useMemo(() => makeRemoteSendUserCredentials(), []);
 
     function handleState(key: string, value: string) {
         setCredentials((prevState) => ({ ...prevState, [key]: value }));
