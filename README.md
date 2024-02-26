@@ -47,6 +47,10 @@ O Compound Pattern é um padrão de projeto que facilita na construção de um c
 
 - [Node.js](https://nodejs.org/en/)
 
+### Variáveis de ambiente
+- É importante a configuração das url's no arquivo `.env`.
+- Há um arquivo exemplo chamado `.env.example`.
+
 ### Instalação
 
 #### Clonar o repositório
