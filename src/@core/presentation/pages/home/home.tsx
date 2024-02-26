@@ -108,7 +108,7 @@ export default function Home() {
     }
 
     useEffect(() => {
-        const tokenIsNull = !Boolean(JSON.parse(localStorage.getItem('auth-token') as string)["token"]);
+        const tokenIsNull = !JSON.parse(JSON.stringify(localStorage.getItem('auth-token')));
         if (tokenIsNull) {
             alert('Unauthorized! Please signin.');
             router.push('/login');
