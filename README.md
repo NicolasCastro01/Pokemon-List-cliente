@@ -69,7 +69,8 @@ $ npm install
 #### Executar o projeto
 
 ```bash
-$ npm run start
+$ npm run build
+$ npm run start # npm run dev (não precisa rodar o build)
 ```
 
 ### Executar os testes
